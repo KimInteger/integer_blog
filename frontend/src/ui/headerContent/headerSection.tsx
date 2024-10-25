@@ -13,7 +13,7 @@ const HeaderContent: React.FC<HeaderContentProps> = ({title}) => {
       </div>
       <div className="text-[16px] mr-4">
         <button onClick={isLogined ? logout : login}>
-          {isLogined ? "로그아웃" : "로그인"}
+          {isLogined ? "로그아웃" : "관리자모드"}
         </button>
       </div>
     </div>

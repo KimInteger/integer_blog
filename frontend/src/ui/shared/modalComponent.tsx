@@ -29,7 +29,7 @@ const Modal: React.FC<ModalProps> = ({ onClose, onLogin }) => {
     <div className="fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-75 z-10">
       <div className="bg-white p-6 rounded shadow-lg w-[20vw] h-[25vh]">
         <div className="h-[80%] flex flex-col items-center justify-center">
-          <h2 className="text-xl mb-4">로그인</h2>
+          <h2 className="text-xl mb-4">관리자 로그인 입니다</h2>
           <input
             type="input"
             value={inputValue}
