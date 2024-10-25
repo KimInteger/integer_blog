@@ -26,7 +26,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'], // CSS 파일을 처리
+        use: ['style-loader', 'css-loader', 'postcss-loader'], // CSS 파일을 처리
       },
       {
         test: /\.(js|jsx|ts|tsx)$/, // 자바스크립트 및 타입스크립트 파일을 처리
