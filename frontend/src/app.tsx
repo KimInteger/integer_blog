@@ -2,6 +2,7 @@ import React from "react";
 import AuthProvider from "./context/AuthContext/authProvider";
 import HeaderContent from "./ui/headerContent/headerSection";
 import { headerLiteral } from "./static/headerStatic/headerStatic";
+import NavigateSection from "./ui/naviContent/naviSection";
 
 const App = ()=>{
   return (
@@ -9,12 +10,12 @@ const App = ()=>{
       <header>
         <HeaderContent title={headerLiteral.title} />
       </header>
-      <main>
-        <p>여가 80vh받으면 된다 아입니까.</p>
-        <div>고정 사이드 네비20vw</div>
-        <div>메인 컨텐츠80vw</div>
+      <main className="flex flex-row w-full">
+        <div className="w-[5vw]">
+          <NavigateSection />
+        </div>
+        <div className="w-[95vw]">메인 컨텐츠80vw</div>
       </main>
-      <footer><span>10vh</span></footer>
     </AuthProvider>
   )
 }
