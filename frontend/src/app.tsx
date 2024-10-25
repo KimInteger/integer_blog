@@ -1,11 +1,13 @@
 import React from "react";
 import AuthProvider from "./context/AuthContext/authProvider";
+import HeaderContent from "./ui/headerContent/headerSection";
+import { headerLiteral } from "./static/headerStatic/headerStatic";
 
 const App = ()=>{
   return (
     <AuthProvider>
       <header>
-        <span>10vh</span>
+        <HeaderContent title={headerLiteral.title} />
       </header>
       <main>
         <p>여가 80vh받으면 된다 아입니까.</p>
