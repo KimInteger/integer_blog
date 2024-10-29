@@ -16,14 +16,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '22'  # 필요한 Node.js 버전
+          node-version: '22'  
 
       - name: Install dependencies
         run: npm install
         working-directory: ./frontend  # frontend 디렉토리에서 실행
 
       - name: Build the project
-        run: npm run build  # 빌드 명령어, 필요한 경우 수정
+        run: npm run build:dev 
         working-directory: ./frontend  # frontend 디렉토리에서 실행
 
       - name: Deploy to GitHub Pages
