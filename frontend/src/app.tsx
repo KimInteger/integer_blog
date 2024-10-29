@@ -20,7 +20,7 @@ const App = () => {
             <div className="w-[20vw]">
               {/* <NavigateSection /> */}
             </div>
-            <div className="w-[60vw] overflow-y-hidden">
+            <div className="w-[60vw] overflow-y-hidden flex flex-col items-center justify-center">
               <Routes>
                 <Route index element={<MainHomeSection />} />
                 <Route path="/about" element={<MainAboutSection />} />
