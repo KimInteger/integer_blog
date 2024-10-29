@@ -12,21 +12,23 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
+
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # 필요한 Node.js 버전
+          node-version: '22'  # 필요한 Node.js 버전
 
       - name: Install dependencies
         run: npm install
-      
+        working-directory: ./frontend  # frontend 디렉토리에서 실행
+
       - name: Build the project
         run: npm run build  # 빌드 명령어, 필요한 경우 수정
-      
+        working-directory: ./frontend  # frontend 디렉토리에서 실행
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./build  # 빌드된 파일이 위치한 디렉토리
+          publish_dir: ./frontend/.build  # 빌드된 파일이 위치한 디렉토리
           publish_branch: release  # 배포할 브랜치
