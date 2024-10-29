@@ -1,9 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import AuthProvider from "./context/AuthContext/authProvider";
 import HeaderContent from "./ui/headerContent/headerSection";
 import { headerLiteral } from "./static/headerStatic/headerStatic";
-import NavigateSection from "./ui/naviContent/naviSection";
 import MainHomeSection from "./ui/mainContent/mainHome";
 import MainAboutSection from "./ui/mainContent/mainAbout";
 import MainProjectSection from "./ui/mainContent/mainProject";
@@ -23,8 +22,10 @@ const App = () => {
             <div className="w-[60vw] overflow-y-hidden flex flex-col items-center justify-center">
               <Routes>
                 <Route index element={<MainHomeSection />} />
+                <Route path="/" element={<MainHomeSection />}/>
                 <Route path="/about" element={<MainAboutSection />} />
                 <Route path="/project" element={<MainProjectSection />} />
+                <Route path="*" element={<Navigate to={'/'} replace />} />
               </Routes>
             </div>
             <div className="w-[20vw]"></div>
