@@ -21,6 +21,7 @@ const App = () => {
           </div>
           <div className="w-[60vw]">
             <Routes>
+              <Route index element={<MainHomeSection />} />
               <Route path="/" element={<MainHomeSection />} />
               <Route path="/about" element={<MainAboutSection />} />
               <Route path="/project" element={<MainProjectSection />} />
