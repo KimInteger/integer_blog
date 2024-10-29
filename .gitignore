@@ -10,6 +10,4 @@ package-lock.json
 .vscode
 
 # build directory
-.build/
-
 .git
