@@ -3,11 +3,13 @@ import React from "react";
 const MainHomeSection = () => {
   return(
     <>
-      <h1>반갑습니다!</h1>
-      <p>전 <b>김정수</b>라고 합니다.</p>
-      <p>개발자인 전 블로그를 만들었습니다.</p>
+      <h1>안녕하세요?</h1>
+      <h1>저는 개발자 김정수입니다.</h1>
+      <h1>제 개인 패치노트에 오신것을 환영합니다.</h1>
       <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, incidunt veniam ut provident rem maiores. Cupiditate, consequatur suscipit! Repellat blanditiis, ipsa provident nesciunt obcaecati dolor sint vitae esse consequuntur suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, possimus. Magnam aliquid quasi, eveniet harum fuga assumenda. Nemo cupiditate voluptatum fugiat, nisi, dignissimos exercitationem quo id officiis officia quae dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione reprehenderit eaque quos minus laboriosam, nulla sequi consequuntur deleniti fugit repudiandae expedita. Alias odio rerum voluptates officia atque sequi aliquam.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, incidunt veniam ut provident rem maiores. Cupiditate, consequatur suscipit! Repellat blanditiis, ipsa provident nesciunt obcaecati dolor sint vitae esse consequuntur suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, possimus. Magnam aliquid quasi, eveniet harum fuga assumenda. Nemo cupiditate voluptatum fugiat, nisi, dignissimos exercitationem quo id officiis officia quae dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione reprehenderit eaque quos minus laboriosam, nulla sequi consequuntur deleniti fugit repudiandae expedita. Alias odio rerum voluptates officia atque sequi aliquam.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, incidunt veniam ut provident rem maiores. Cupiditate, consequatur suscipit! Repellat blanditiis, ipsa provident nesciunt obcaecati dolor sint vitae esse consequuntur suscipit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, possimus. Magnam aliquid quasi, eveniet harum fuga assumenda. Nemo cupiditate voluptatum fugiat, nisi, dignissimos exercitationem quo id officiis officia quae dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione reprehenderit eaque quos minus laboriosam, nulla sequi consequuntur deleniti fugit repudiandae expedita. Alias odio rerum voluptates officia atque sequi aliquam.
+      <button className="bg-orange-500 text-white font-semibold text-base px-4 py-2 rounded-md hover:bg-orange-600">
+        Knock Knock!
+      </button>
       </div>
     </>
 

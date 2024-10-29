@@ -1,3 +1,3 @@
 export const headerLiteral = {
-  title : "김정수"
+  title : "김인티저_블로그"
 }

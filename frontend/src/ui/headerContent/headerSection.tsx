@@ -2,6 +2,7 @@
 import React, { useContext } from "react";
 import HeaderContentProps from "../../interface/headerInterface/headerContentProps";
 import { AuthContext } from "../../context/AuthContext/authContext";
+import routePush from "../../lib/routeFunc";
 
 const HeaderContent: React.FC<HeaderContentProps> = ({title}) => {
   const { isLogined, login, logout } = useContext(AuthContext);
@@ -9,7 +10,9 @@ const HeaderContent: React.FC<HeaderContentProps> = ({title}) => {
   return (
     <div className="flex flex-row items-center justify-between bg-orange-400 w-screen h-[7vh]">
       <div className="text-base ml-4">
-        <span>{title}</span>
+        <button className="bg-transparent" onClick={routePush('/')}>
+          <span className="text-[2rem] font-extrabold">{title}</span>
+        </button>
       </div>
       <div className="text-[16px] mr-4">
         <button onClick={isLogined ? logout : login}>

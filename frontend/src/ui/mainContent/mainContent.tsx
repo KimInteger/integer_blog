@@ -1,4 +1,4 @@
-import React from "react";
+import {BrowserRouter as Router, Route,Routes} from 'react-router-dom'
 import MainHomeSection from "./mainHome";
 import MainAboutSection from "./mainAbout";
 import MainProjectSection from "./mainProject";
@@ -7,6 +7,13 @@ import MainProjectSection from "./mainProject";
 const MainContent = () => {
   return(
     <>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainHomeSection />} />
+        <Route path="/tutoZeroOne" element={<MainAboutSection />} />
+        <Route path="/tutoZeroTwo" element={<MainProjectSection />} />
+      </Routes>
+    </Router>
       <div id="home">
         <MainHomeSection />
       </div>
