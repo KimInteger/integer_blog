@@ -51,7 +51,7 @@ const MainAboutSection = () => {
     <div className="scrollable flex flex-col justify-center items-center">
       <h1 className="text-4xl font-bold mb-14">About Me!</h1>
       <div>
-        <div className="w-[20vw] h-[35vh] font-extrabold bg-orange-100 flex flex-col items-center border-r-amber-400 rounded-xl">
+        <div className="w-[20vw] h-[38vh] font-extrabold bg-orange-100 flex flex-col items-center border-r-amber-400 rounded-xl">
           <p className="p-4">{displayText}</p>
           {/* 선택지가 표시되는 부분 */}
           {currentIndex === 3 && showOptions && (
