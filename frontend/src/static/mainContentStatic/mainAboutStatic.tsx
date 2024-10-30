@@ -1,4 +1,8 @@
-// ../../static/mainContentStatic/mainAboutStatic.ts
+import AboutMe from "../../ui/mainContent/AboutContent/aboutWhoAmI";
+import AboutWhatIWish from "../../ui/mainContent/AboutContent/aboutWhatIWant";
+import AboutWhatIdo from "../../ui/mainContent/AboutContent/aboutWhatIdo";
+import SadSentence from "../../ui/mainContent/AboutContent/justSadContent";
+
 export const aboutTexts = [
   "  안녕하십니까! About Me!라고 적었지만, 사실 별거 없습니다.",
   " 다만, 제가 무엇을 할 줄 알고, 무엇을 했었는지, 또 무엇을 하고 싶은지에 대하여 소개하는 공간이라고 말하고 싶습니다.",
@@ -14,8 +18,8 @@ export const choiceQuestion = [
 ]
 
 export const choiceQuestionAndAnswer: { [key: string]: React.ReactNode } = {
-  "무엇을 할 수 있습니까?": <div>이것을 할 수 있습니다.</div>,
-  "무엇을 했습니까?": <div>이것을 했습니다.</div>,
-  "무엇을 하고 싶습니까?": <div>이것을 하고 싶습니다.</div>,
-  "전 궁금한게 없습니다.": <div>야호!</div>,
+  "  무엇을 할 수 있습니까?": <AboutMe />,
+  "  무엇을 했습니까?": <AboutWhatIdo />,
+  "  무엇을 하고 싶습니까?": <AboutWhatIWish />,
+  "  전 궁금한게 없습니다.": <SadSentence />,
 };
