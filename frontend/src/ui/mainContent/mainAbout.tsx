@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { aboutTexts, choiceQuestion } from "../../static/mainContentStatic/mainAboutStatic";
-import routePush from "../../lib/routeFunc";
+import { aboutTexts } from "../../static/mainContentStatic/mainAboutStatic";
+import AboutStoryModalComponent from "./AboutContent/combineAboutContentModal";
 
 const MainAboutSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,11 +42,6 @@ const MainAboutSection = () => {
     }
   };
 
-  const handleBackToQuestion = () => {
-    setCurrentIndex(3); // "무엇이 궁금하십니까??"로 돌아감
-    setShowOptions(false); // 선택지를 숨김
-  };
-
   return (
     <div className="scrollable flex flex-col justify-center items-center">
       <h1 className="text-4xl font-bold mb-14">About Me!</h1>
@@ -56,34 +51,10 @@ const MainAboutSection = () => {
           {/* 선택지가 표시되는 부분 */}
           {currentIndex === 3 && showOptions && (
             <div className="mt-4 w-[15vw]">
-              {choiceQuestion.map((option,index)=>(
-                <div
-                key={index} // 각 요소의 고유 키로 인덱스 사용
-                className="border p-4 rounded-md mb-2 border-orange-400 hover:text-white hover:bg-orange-300 cursor-pointer"
-                onClick={()=>{routePush('/about')}}
-                >
-                  {option}
-                </div>
-              ))}
+              <AboutStoryModalComponent/>
             </div>
           )}
         </div>
-
-
-        {/* {selectedOption && (
-          <div className="mt-4">
-            <h2 className="text-2xl font-bold">{selectedOption}</h2>
-            <div className="mt-2">
-              <button
-                className="bg-orange-500 text-white font-semibold px-4 py-2 rounded"
-                onClick={handleBackToQuestion}
-              >
-                돌아가기
-              </button>
-            </div>
-          </div>
-        )}
- */}
         <div className="mt-4 flex flex-row justify-between">
           <button
             className="mr-2 bg-orange-500 text-white font-semibold px-4 py-2 rounded"
