@@ -16,11 +16,17 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '22'  
+          node-version: '22'
 
       - name: Install dependencies
         run: npm install
         working-directory: ./frontend  # frontend 디렉토리에서 실행
+
+      - name: Set environment variables  # .env.local 파일에 환경변수 추가
+        run: |
+          echo "ENTRY_POINT=${{ secrets.ENTRY_POINT }}" >> ./frontend/.env.local
+          echo "REACT_APP_PASSWORD=${{ secrets.REACT_APP_PASSWORD }}" >> ./frontend/.env.local
+        working-directory: ./frontend
 
       - name: Build the project
         run: npm run build:dev 
