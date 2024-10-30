@@ -41,10 +41,10 @@ const Modal: React.FC<ModalProps> = ({ onClose, onLogin }) => {
           {errorMessage && <p className="text-red-500 text-sm mt-2">{errorMessage}</p>}
         </div>
         <div className="flex items-center justify-around h-[20%]">
-          <button onClick={handleSubmit} className="bg-blue-500 text-white p-2 rounded">
+          <button onClick={handleSubmit} className="bg-orange-500 text-white p-2 rounded">
             확인
           </button>
-          <button onClick={onClose} className="bg-blue-500 text-white p-2 rounded">취소</button>
+          <button onClick={onClose} className="bg-orange-500 text-white p-2 rounded">취소</button>
         </div>
       </div>
     </div>
