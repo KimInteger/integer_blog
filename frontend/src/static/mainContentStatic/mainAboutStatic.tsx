@@ -12,3 +12,10 @@ export const choiceQuestion = [
   "  무엇을 하고 싶습니까?",
   "  전 궁금한게 없습니다."
 ]
+
+export const choiceQuestionAndAnswer: { [key: string]: React.ReactNode } = {
+  "무엇을 할 수 있습니까?": <div>이것을 할 수 있습니다.</div>,
+  "무엇을 했습니까?": <div>이것을 했습니다.</div>,
+  "무엇을 하고 싶습니까?": <div>이것을 하고 싶습니다.</div>,
+  "전 궁금한게 없습니다.": <div>야호!</div>,
+};
