@@ -1,0 +1,48 @@
+/* aboutReport.css */
+
+/* 전체 보고서 컨테이너 스타일 */
+.report-container {
+  max-width: 40vw; /* 최대 너비 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+  padding: 2rem; /* 내부 여백 설정 */
+  background-color: #fbd38d; /* 배경 색상: bg-orange-200 */
+  border: 2px solid #d77f26; /* 테두리 색상: orange-400 */
+  border-radius: 1rem; /* 모서리 둥글게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+/* 제목 스타일 */
+.report-title {
+  font-size: 2rem; /* 제목 크기 */
+  font-weight: bold; /* 제목 두께 */
+  text-align: center; /* 가운데 정렬 */
+  margin-bottom: 1rem; /* 아래쪽 여백 */
+}
+
+/* 섹션 제목 스타일 */
+.report-section-title {
+  font-size: 1.5rem; /* 섹션 제목 크기 */
+  font-weight: 600; /* 두께 설정 */
+  margin-top: 2rem; /* 위쪽 여백 */
+  margin-bottom: 0.5rem; /* 아래쪽 여백 */
+}
+
+/* 본문 텍스트 스타일 */
+.report-text {
+  font-size: 1rem; /* 본문 텍스트 크기 */
+  line-height: 1.5; /* 줄 간격 */
+  margin-bottom: 1rem; /* 아래쪽 여백 */
+}
+
+/* 구분선 스타일 */
+.report-divider {
+  border: 1px solid #d77f26; /* 구분선 색상 */
+  margin: 1.5rem 0; /* 위아래 여백 */
+}
+
+/* 강조 텍스트 스타일 */
+.report-highlight {
+  background-color: rgba(255, 165, 0, 0.3); /* 강조 배경색 */
+  padding: 0.2rem 0.4rem; /* 강조 여백 */
+  border-radius: 0.25rem; /* 둥글게 처리 */
+}
