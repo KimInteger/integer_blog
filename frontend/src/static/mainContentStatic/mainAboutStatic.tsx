@@ -11,14 +11,14 @@ export const aboutTexts = [
 ];
 
 export const choiceQuestion = [
-  "  무엇을 할 수 있습니까?",
+  "  당신은 누구입니까?",
   "  무엇을 했습니까?",
   "  무엇을 하고 싶습니까?",
   "  전 궁금한게 없습니다."
 ]
 
 export const choiceQuestionAndAnswer: { [key: string]: React.ReactNode } = {
-  "  무엇을 할 수 있습니까?": <AboutMe />,
+  "  당신은 누구입니까?": <AboutMe />,
   "  무엇을 했습니까?": <AboutWhatIdo />,
   "  무엇을 하고 싶습니까?": <AboutWhatIWish />,
   "  전 궁금한게 없습니다.": <SadSentence />,

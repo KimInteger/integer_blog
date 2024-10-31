@@ -4,33 +4,70 @@ import '../../../style/aboutReport.css'; // CSS 파일 임포트
 const AboutMe = () => {
   return (
     <div className="report-container mt-4"> 
-      <h1 className="report-title">김정수는 무엇을 할 수 있는가!</h1>
+      <h1 className="report-title">김정수는 누구인가!</h1>
       <div className="report-divider" /> 
       <div>
         <p className="report-text">
           이 주제는 두 가지로 나눌 수 있습니다. <br />
-          생산자 김정수와 개발자 김정수는 할 수 있는 것도 다르고, <br />
-          이룬 것도 다르기 때문입니다.
+          소비자 김정수와 개발자 김정수입니다. <br />
+          둘은 같은 김정수이지만, 마음가짐에서 달랐기 때문입니다.
         </p>
       </div>
       <div>
-        <h2 className="report-section-title">1. 생산자 김정수</h2>
+        <h2 className="report-section-title">1. 소비자 김정수</h2>
         <p className="report-text">
-          생산자 김정수는 콘텐츠를 기획하고 제작하는 데 주력하고 있습니다. 
-          다양한 매체를 통해 대중과 소통하며, 창의적인 아이디어를 바탕으로 
-          프로젝트를 진행합니다.
+          소비자 김정수는 개발자가 되기 이전의 김정수입니다. 모든 것을 소비하기만 하는 존재로서, 자신이 하고싶은 것조차 없었습니다. <br />
+          그저 하루하루를 보내는데 열중이고, 미래를 보지 않습니다. 삶의 이유도 없습니다. <br />
+          하지만 그렇기에 오히려 삶의 이유를 찾아다녔습니다. 처음에는 "그냥"이었고, 다음은 "음식이 맛있어서", 그 다음은 "날 좋아해주는 사람이 있으니까 더 오래 살아야지." <br />
+          조금씩 삶의 이유를 늘려가던 도중, 어떠한 일을 계기로 그는 생산자가 되기로 마음먹습니다. <br />
+          엘리베이터였습니다. 지금은 그 누구도 쉽게 사용하고, 고층건물에 없으면 화내는 엘리베이터. <br />
+          소비자 김정수는 그냥 엘리베이터는 어떻게 움직이는 걸까? 라는 자그마한 궁금증을 품었을 뿐이고, 거기에서 오는 충격은 강렬했습니다. <br />
+          내가 당연하게 '소비'하고 있지만, 나는 그 '원리'조차 모르고 있다. <br />
+          생각해보니 이런식으로 당연하게 소비하고 있는 물품들이 너무 많았습니다. 저는 그게 무척 부러웠습니다. <br />
+          누군가가 개발한 것이 너무나도 당연하게도 사람들에게 기여를 하고있다. 존경스러운 일이다. <br />
+          나도 그렇게 되고 싶다. <br />
+          소비자 김정수는 그렇게 개발자 김정수를 꿈꾸게 되었습니다.
         </p>
       </div>
       <div>
         <h2 className="report-section-title">2. 개발자 김정수</h2>
-        <p className="report-text">
-          개발자 김정수는 웹 애플리케이션을 구축하고 유지보수하는 데 힘쓰고 있습니다. 
-          JavaScript와 최신 프레임워크를 사용하여 사용자 친화적인 경험을 제공하기 위해 
-          노력하고 있습니다.
-        </p>
-        <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore, aut labore beatae quos tempora natus, odio deleniti, quam error similique ut! Architecto neque labore repudiandae quo quod corrupti sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore, aut labore beatae quos tempora natus, odio deleniti, quam error similique ut! Architecto neque labore repudiandae quo quod corrupti sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore, aut labore beatae quos tempora natus, odio deleniti, quam error similique ut! Architecto neque labore repudiandae quo quod corrupti sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore, aut labore beatae quos tempora natus, odio deleniti, quam error similique ut! Architecto neque labore repudiandae quo quod corrupti sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore, aut labore beatae quos tempora natus, odio deleniti, quam error similique ut! Architecto neque labore repudiandae quo quod corrupti sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore, aut labore beatae quos tempora natus, odio deleniti, quam error similique ut! Architecto neque labore repudiandae quo quod corrupti sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore, aut labore beatae quos tempora natus, odio deleniti, quam error similique ut! Architecto neque labore repudiandae quo quod corrupti sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore, aut labore beatae quos tempora natus, odio deleniti, quam error similique ut! Architecto neque labore repudiandae quo quod corrupti sunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dolore, aut labore beatae quos tempora natus, odio deleniti, quam error similique ut! Architecto neque labore repudiandae quo quod corrupti sunt.
-        </p>
+        <div className="report-text">
+          <p>그렇게 개발자의 꿈을 꾼 소비자 김정수는 훈련을 시작하여 훈련생 김정수가 되었습니다.</p>
+          <p>평생 소비자였기에 막연한 두려움을 가지고 시작한 개발자의 길은 생각보다 어렵지 않았습니다.</p>
+          <p>다만 낯설었습니다. 내가 모르는 개념들이 매우 많았고, 어떻게 대처해야할지 몰랐기 때문에 낯설었습니다.</p>
+          <p>하지만 낯설음은 극복하면 그만입니다. 낯선 지식들을 공부하고, 그것을 활용해나가며, 저는 개발자가 되어갔습니다.</p>
+          <br />
+          <p>첫 만남은 HTML, 글을 적으면 되는구나, 이건 메모장과 다름이 없어보인다.</p>
+          <p>두번째는 CSS, 디자인? 내가 만들고 싶은 것을 만드려면, 디자인도 직접 할 줄 알아야겠지.</p>
+          <p>세번째는 JavaScript, 이제는 확실히 문서가 아니라 무언가 상호작용을 할 수 있게 되었구나.</p>
+          <p>네번째는 Node.js, 지금까지는 html파일을 직접 실행해서 확인하던 것을, local환경에서 내가 직접 지정하고, 서빙하여 나타낼 수 있게되었다. <br />
+          만약, 나중에 내가 도메인을 얻기만 한다면, 그땐 내가 만든 것을 내가 모르는 사람들에게 공유하고 그 사람들에게 편의성을 제공할 수 있겠구나.</p>
+          <p>
+            다섯번째는 TypeScript, 내가 편하다고 생각한 유연함이란게 사실은 매우 위험한 것이고, 이를 사전에 방지할 수 있다는 것은 축복이다. <br />
+            엄격함이 주는 안정감은 이루말할 수 없구나.
+          </p>
+          <p>여섯번째는 React, 부품들을 만들어놓고, 갈아끼우는 형태로 사용하니 편의성이 남다르구나, 이게 라이브러리라는 거구나.</p>
+          <br />
+          <p>이외에도, babel이라거나 webpack으로 호환성과 번들링, 패키징등의 개념도 알게 되니, 새삼 개발자들이 이 넷세상에서 얼마나 많은 노력을 하였는지 와닿기도 하였습니다.</p>
+          <p>개발자가 되었지만, 여전히 내가 모르는 세상이 많다. 개발자가 되고나서 알게된 세상이 개발자가 되기전에 알던 세상보다 많은 느낌이다.</p>
+          <p>개발자 김정수는 모르는 세상을 탐구하고, 그렇게 탐구한 세상을 사람들로 하여금 소비할 수 있도록 하고 싶은 사람입니다.</p>
+        </div>
+      </div>
+      <div>
+        <h2 className="report-section-title">3. 무엇을 할 수 있습니까?</h2>
+        <div className='report-text'>
+          <p>그래서 김정수는 무엇을 할 수 있습니까?</p>
+          <p>김정수는 다음과 같은 기술을 다룰 수 있습니다.</p>
+          <ul className='list-disc list-inside'>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>AWS Amplify</li>
+            <li>Git</li>
+            <li>그 외 해야한다면 무엇이든지.</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
